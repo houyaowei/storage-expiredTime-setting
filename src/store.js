@@ -1,3 +1,6 @@
-const store = {
-  
+const localStore = {
+    
+}
+export  {
+  localStore
 }
