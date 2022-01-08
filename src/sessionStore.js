@@ -1,0 +1,6 @@
+const sessionStore = {
+
+}
+export {
+  sessionStore
+}
