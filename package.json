@@ -1,0 +1,24 @@
+{
+  "name": "storage-espiredTime-setting",
+  "version": "1.0.0",
+  "description": "setting expired time for localStorage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houyaowei/storage-espiredTime-setting.git"
+  },
+  "keywords": [],
+  "author": "houyaowei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/houyaowei/storage-espiredTime-setting/issues"
+  },
+  "homepage": "https://github.com/houyaowei/storage-espiredTime-setting#readme",
+  "devDependencies": {
+    "rollup": "^2.63.0"
+  }
+}
