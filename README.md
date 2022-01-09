@@ -1,8 +1,18 @@
-# storage-expiredTime-setting
+# storage-expired-time-setting
 
 ### 目的
 
 解决localStorage中存储的值不能及时释放的问题，默认存储时间为7天(day)，以当前时间为准。
+
+### 用法
+
+```javascript
+npm install storage-expired-time-setting
+or
+yarn add storage-expired-time-setting
+```
+
+
 
 ### API 
 

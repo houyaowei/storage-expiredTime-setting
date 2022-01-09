@@ -11,7 +11,7 @@ const DEFAULTTIME = 1000*60*60*24*7  // 存储时间默认7天，单位是ms
 const localStore = {
     get: function (key,cb) {
         let result = {}
-        let _status = types.SUCCESS
+        let _status = SUCCESS
         let _value = '' // ’value|-TS-|过期时间‘结构的数据
         let resValue = '' //返回的值
         const _key = utils.getKey(key) // 返回sl-key的形式
@@ -30,7 +30,7 @@ const localStore = {
             resValue = arr[0]
             let now = new Date().getTime()
             if (time > now) {
-                _status = types.EXPIRED
+                _status = EXPIRED
                 _store.removeItem(key)
             } else {
               _status = types.SUCCESS
@@ -59,7 +59,7 @@ const localStore = {
         }
         let _key = utils.getKey(key)
         try {
-            _store.setItem(_key, value + prefix.TIME_SIGNATURE+ expiredTime)
+            _store.setItem(_key, value + prefix.TIME_SIGNATURE + expiredTime)
         }catch (e) {
             cb && cb(this,{value: null,status: types.FAILURE })
         }
