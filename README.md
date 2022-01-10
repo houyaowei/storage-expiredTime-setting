@@ -61,6 +61,9 @@ localStorage过期时间设置，统一返回的结构，返回的状态如下�
 }
 ```
 
+### 友情提醒
+关于存储失效的问题只适用于localstorage, 该包提供的sessionStorage只是为了让两个web storage返回的数据结构保持一致，同时处理了数据异常的问题。
+
 
 
 ### 协议

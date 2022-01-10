@@ -1,14 +1,18 @@
 {
   "name": "storage-expired-time-setting",
-  "version": "0.0.4",
+  "version": "0.0.9",
   "description": "setting expired time for localStorage",
   "main": "./dist/storage-expired-setting.js",
   "module": "./dist/storage-expired-setting.js",
   "license": "MIT",
   "author": "houyaowei",
-  "keywords": ["localStorage", "expire time"],
+  "keywords": [
+    "localStorage",
+    "expire time"
+  ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "async": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,10 @@
   "homepage": "https://github.com/houyaowei/storage-espiredTime-setting#readme",
   "devDependencies": {
     "rollup": "^2.63.0"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "g": "^2.0.1",
+    "yalc": "^1.0.0-pre.53"
   }
 }
