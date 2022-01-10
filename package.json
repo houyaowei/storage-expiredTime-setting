@@ -1,9 +1,8 @@
 {
   "name": "storage-expired-time-setting",
-  "version": "0.0.9",
+  "version": "0.1.2",
   "description": "setting expired time for localStorage",
-  "main": "./dist/storage-expired-setting.js",
-  "module": "./dist/storage-expired-setting.js",
+  "main": "dist/storage-expired-setting.js",
   "license": "MIT",
   "author": "houyaowei",
   "keywords": [

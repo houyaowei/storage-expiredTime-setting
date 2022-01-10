@@ -12,16 +12,31 @@ or
 yarn add storage-expired-time-setting
 ```
 
+```javascript
+import { localStore, sessionStore} from 'storage-expired-time-setting'
+localStore.set('name','hyw','2022-1-10 09:28:00',(_this,value) => {})
+localStore.get('name',(a,b) => {
+   console.log(a,b)
+})
+localStore.clear()
+localStore.deleteItem(name)
+```
+
 
 
 ### API 
 
-该npm库和[web storage](html.spec.whatwg.org/multipage/webstorage.html)的api保持相对应，具体的对应规则是setItem->set, getItem-> get, removeItem -> deleteItem, 
+该npm库和[web storage](html.spec.whatwg.org/multipage/webstorage.html)的api保持相对应，具体的对应规则是(前者是标准API):
 
-clear->clear。具体参数如下：
+- setItem->set
+- getItem-> get
+-  removeItem -> deleteItem
+- clear->clear
 
-- set( key, value, time,cb)设置key的失效时间，key：webstorage中对应的key。value：webstorage中对应的value。time表示失效时间,具体的格式为 `2022-01-09 114:57:28`,是一个标准的时间串，否则会使用`new Date`初始化一个当前时间。如果有其他的业务逻辑需要处理，可以在回调中进行
-- get(key, cb), 获取已经存的值
+具体参数如下：
+
+- set( key, value, time,cb)设置key的失效时间，key：webstorage中对应的key。value：webstorage中对应的value。time表示失效时间,具体的格式为 `2022-01-09 114:57:28`,是一个标准的时间串，否则会使用`new Date`初始化一个当前时间。如果有其他的业务逻辑需要处理，可以在回调中进行，`该回调可选`。
+- get(key, cb), 取值
 - deleteItem(key)，删除某个key
 - clear，清除所有的值
 

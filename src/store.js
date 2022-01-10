@@ -23,8 +23,8 @@ const localStore = {
                 status: types.FAILURE
             }
         }
-        let arr = _value.split('|')
-        if (_value && arr.length === 3) {
+        if (_value && _value.split('|').length === 3) {
+            let arr = _value.split('|')
             // let reg = /^(\w+|){2}\w+$/gi
             let time = arr[2] //过期时间
             resValue = arr[0]
