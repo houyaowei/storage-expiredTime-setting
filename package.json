@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "async": "npm run build && npm publish"
+    "async": "npm run build && yalc publish"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,7 @@
   },
   "homepage": "https://github.com/houyaowei/storage-espiredTime-setting#readme",
   "devDependencies": {
-    "rollup": "^2.63.0"
-  },
-  "dependencies": {
+    "rollup": "^2.63.0",
     "-": "0.0.1",
     "g": "^2.0.1",
     "yalc": "^1.0.0-pre.53"
